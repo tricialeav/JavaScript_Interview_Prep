@@ -13,12 +13,12 @@ fibonacciIterative = (num) => {
             sum = previous + current; 
             previous = current;
             current = sum;  
-            console.log(current); 
         }
+        return (current); 
     }
 }
 
-fibonacciIterative(28);
+fibonacciIterative(10); // 89
 
 fibonacciRecursive = (num) => {
     if (num < 2) {
@@ -28,4 +28,4 @@ fibonacciRecursive = (num) => {
     }
 }
 
-fibonacciRecursive(28); 
+fibonacciRecursive(10); // 89
