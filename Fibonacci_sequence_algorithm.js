@@ -19,3 +19,13 @@ fibonacciIterative = (num) => {
 }
 
 fibonacciIterative(28);
+
+fibonacciRecursive = (num) => {
+    if (num < 2) {
+        return 1; 
+    } else {
+        return (fibonacciRecursive(num-1) + fibonacciRecursive (num - 2)); 
+    }
+}
+
+fibonacciRecursive(28); 
