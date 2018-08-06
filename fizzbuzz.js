@@ -2,7 +2,7 @@
 with "fizz", multiples of 5 with "buzz", and multiples of 3 and 5 with 
 "fizzbuzz" */
 
-fizzbuzz = (num) => {
+const fizzbuzz = (num) => {
     if (num <= 0) {
         return false; 
     } else {

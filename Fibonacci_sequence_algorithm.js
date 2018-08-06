@@ -2,7 +2,7 @@
 each position is the sum of the two previous positions. For example: 
 1, 1, 2, 3, 5, 8, 13 */
 
-fibonacciIterative = (num) => {
+const fibonacciIterative = (num) => {
     if (num < 2) {
         return 1; 
     } else {
@@ -20,7 +20,7 @@ fibonacciIterative = (num) => {
 
 fibonacciIterative(10); // 89
 
-fibonacciRecursive = (num) => {
+const fibonacciRecursive = (num) => {
     if (num < 2) {
         return 1; 
     } else {

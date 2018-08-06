@@ -2,7 +2,7 @@
 A factorial is the product of an integer and all of the integers before it.
 Example: 4! = 4 * 3 * 2 * 1 which equals 24 */
 
-factorialIterative = (num) => {
+const factorialIterative = (num) => {
     if (num <= 0) {
         return false; 
     } else { 

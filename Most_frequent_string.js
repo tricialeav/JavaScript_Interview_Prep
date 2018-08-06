@@ -1,7 +1,7 @@
 /* Given an array, find the most frequent string (assuming that there 
 is not a tie) */ 
 
-mostFrequent = (arr) => {
+const mostFrequent = (arr) => {
     let currentCount; 
     let max = 0; 
     let mostFrequentString; 
