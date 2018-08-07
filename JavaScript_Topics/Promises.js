@@ -4,8 +4,8 @@ Promises are a returned object to which you attach callbacks,
 instead of passing callbacks into a function.
 Promises are immutible (cannot be changed) and must return a value
 Promises have three states: fulfilled, pending, and rejected
-Promises must contain a .then() method
-Add a .catch() method to the end 
+Promises must contain a .then() method to handle fulfilled promises
+Add a .catch() method to the end to deal with rejected promises
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
 https://codeburst.io/the-es6-promises-87a979ab27e4
