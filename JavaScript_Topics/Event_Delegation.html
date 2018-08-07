@@ -1,0 +1,51 @@
+<!-- 
+
+Event Listeners are set to a parent element and checked to see which
+property (child) has been targeted.
+This makes adding/changing events on multiple items more efficient.
+To target specific values, use evt.target.matches(...) 
+
+https://davidwalsh.name/event-delegate
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Delegation</title>
+</head>
+<body>
+
+    <h1>Event Delegation</h1>
+
+    <div id="buttons">
+        <button value = "1">Button 1</button>
+        <button value = "2">Button 2</button>
+        <button value = "3">Button 3</button>
+        <button value = "4">Button 4</button>
+        <button value = "5">Button 5</button>
+        <button value = "6">Button 6</button>
+        <button value = "7">Button 7</button>
+        <button value = "8">Button 8</button>
+        <button value = "9">Button 9</button>
+        <button value = "10">Button 10</button>
+    </div>
+    <div>
+        <h2>Click a button and its name will appear below:</h2>
+        <h2 id="output"></h2>
+    </div>
+
+    <script>
+        document.getElementById('buttons').addEventListener('click', function(evt) {
+            if (evt.target && evt.target.nodeName === 'BUTTON') {
+                document.getElementById('output').innerHTML = 'Button ' + evt.target.value;
+            }
+        });
+    
+    </script>
+    
+</body>
+</html>
