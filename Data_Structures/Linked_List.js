@@ -9,6 +9,7 @@ Average search time complexity: Θ(n)
 Average insertion/deletion time complexity: O(1)
 Space Complexity (Worst): O(n)
 
+Code from:
 https://hackernoon.com/the-little-guide-of-linked-list-in-javascript-9daf89b63b54
 https://github.com/germancutraro/LinkedList-Data-Structure
 */

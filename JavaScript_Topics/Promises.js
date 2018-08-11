@@ -7,11 +7,12 @@ Promises have three states: fulfilled, pending, and rejected
 Promises must contain a .then() method to handle fulfilled promises
 Add a .catch() method to the end to deal with rejected promises
 
+Code from:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
 https://codeburst.io/the-es6-promises-87a979ab27e4
 */
 
-const isSmallThenTen = (num) => {
+const isSmallerThanTen = (num) => {
     return new Promise((resolve, reject) => {
         if(num < 10) {
             resolve(true)
@@ -21,6 +22,6 @@ const isSmallThenTen = (num) => {
     })
 }
 
-isSmallThenTen(9)
-    .then(res => console.log('The number is smaller then 10'))
-    .catch(err => console.log('The number is not smaller then 10'))
+isSmallerThanTen(9)
+    .then(res => console.log('The number is smaller than 10'))
+    .catch(err => console.log('The number is not smaller than 10'))

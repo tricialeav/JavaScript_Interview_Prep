@@ -5,6 +5,7 @@ Merge individual items together into new results array
 Average Time Complexity: Θ(n log(n))
 Space Complexity (Worst): O(n) 
 
+Code from:
 http://btholt.github.io/four-semesters-of-cs/
 */ 
 
