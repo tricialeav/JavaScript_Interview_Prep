@@ -1,5 +1,5 @@
 /* A promise is an object that represents a single value some time in the future
-based on JavaScript's asynchronous nature
+based on JavaScript's asynchronous nature.
 Promises are a returned object to which you attach callbacks, 
 instead of passing callbacks into a function.
 Promises are immutible (cannot be changed) and must return a value
