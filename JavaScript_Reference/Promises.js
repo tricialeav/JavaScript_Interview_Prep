@@ -14,14 +14,10 @@ https://codeburst.io/the-es6-promises-87a979ab27e4
 
 const isSmallerThanTen = (num) => {
     return new Promise((resolve, reject) => {
-        if(num < 10) {
-            resolve(true)
-        } else {
-            reject(false)
-        }
+        num < 10 ? resolve(true) : reject(false)
     })
 }
 
-isSmallerThanTen(9)
+isSmallerThanTen(23)
     .then(res => console.log('The number is smaller than 10'))
     .catch(err => console.log('The number is not smaller than 10'))
