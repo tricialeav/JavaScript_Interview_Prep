@@ -1,4 +1,4 @@
-/* Objects inherit properties from other objects
+/* In prototypal inheritance, an object is a copy of the parent object. 
 Instances may be made from many source objects
 Typically use Object.create()
 3 types of prototypal inheritance: 
