@@ -75,7 +75,7 @@ console.log(GoTLikability);
 */
 
 // Reduce is used to iterate over items and return a total value 
-// Reduct takes four parameters: end value, current item, index, and array.
+// Reduce takes four parameters: end value, current item, index, and array.
 // Reduce also requires a starting value, placed at the end of the return statement's closing } tag
 let GoTTotalLikability = GoT.reduce((likability, character) => likability += character.likability, 0); 
 
